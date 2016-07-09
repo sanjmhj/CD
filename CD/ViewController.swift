@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet var mobileTableView: UITableView!
     
     var mobile = [Mobile]()
-//    var mobile: [Mobile]?
-//    var mobile [Mobile]()
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
@@ -50,13 +48,8 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        return UITableViewCell()
         guard let cell = tableView.dequeueReusableCellWithIdentifier("mobileCell") as? MobileCell else { return UITableViewCell() }
-//        print(self.mobile[indexPath.row].sn)
         cell.sn.text = String(self.mobile[indexPath.row].sn!)
-//        cell.name.text = "this is name'"
-//        cell.price.text = "pricing text"
-//        cell.sn.text = Int(self.mobile[indexPath.row].sn)
         cell.name.text = self.mobile[indexPath.row].name
         cell.price.text = self.mobile[indexPath.row].price
         return cell
