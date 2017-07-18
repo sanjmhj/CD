@@ -6,8 +6,8 @@ class CoreDataHelper: CoreDataStack {
     // Singleton
     static let sharedInstance = CoreDataHelper()
 
-    func entityDescription(entityName: String) -> NSEntityDescription? {
-        if let entity = NSEntityDescription.entityForName(entityName, inManagedObjectContext: managedObjectContext) {
+    func entityDescription(_ entityName: String) -> NSEntityDescription? {
+        if let entity = NSEntityDescription.entity(forEntityName: entityName, in: managedObjectContext) {
             return entity
         }
         return nil
@@ -17,8 +17,8 @@ class CoreDataHelper: CoreDataStack {
         return entityDescription("Mobile")
     }
 
-    private func fetchRequest(entityName: String, withPredicate predicate: NSPredicate?) -> NSFetchedResultsController {
-        let fetchRequest = NSFetchRequest(entityName: entityName)
+    fileprivate func fetchRequest(_ entityName: String, withPredicate predicate: NSPredicate?) -> NSFetchedResultsController<NSFetchRequestResult> {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         fetchRequest.sortDescriptors = [
             NSSortDescriptor(key: "sn", ascending: true)
         ]
