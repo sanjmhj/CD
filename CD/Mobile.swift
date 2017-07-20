@@ -19,10 +19,10 @@ class Mobile: NSManagedObject {
     return Mobile(entity: CoreDataHelper.sharedInstance.mobileEntity()!, insertInto: CoreDataHelper.sharedInstance.managedObjectContext)
   }
 
-  func createMobile(_ sn: Int, name: String, price: String) {
-    self.sn = NSNumber(value: sn as Int)
+  func createMobile(_ sn: String, name: String, price: String) {
+    self.sn = sn
     self.name = name
-    self.price = name
+    self.price = price
   }
 
 }

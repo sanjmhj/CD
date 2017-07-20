@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
     @IBAction func submitButton(_ sender: UIButton) {
         let mobile = Mobile.createMobileEntity()
-        mobile.createMobile(Int(self.snTextfield.text!)!, name: self.nameTextfield.text!, price: self.priceTextfield.text!)
+        mobile.createMobile(self.snTextfield.text!, name: self.nameTextfield.text!, price: self.priceTextfield.text!)
         CoreDataHelper.sharedInstance.saveMainContext()
         fetchData()
         self.mobileTableView.reloadData()
@@ -50,7 +50,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "mobileCell") as? MobileCell else { return UITableViewCell() }
         cell.sn.text = String(describing: self.mobile[indexPath.row].sn!)
-        cell.name.text = self.mobile[indexPath.row].name
+      cell.name.text = String(describing: self.mobile[indexPath.row].name)
         cell.price.text = self.mobile[indexPath.row].price
         return cell
     }

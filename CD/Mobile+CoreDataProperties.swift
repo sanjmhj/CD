@@ -14,7 +14,7 @@ import CoreData
 
 extension Mobile {
 
-    @NSManaged var sn: NSNumber?
+    @NSManaged var sn: String?
     @NSManaged var name: String?
     @NSManaged var price: String?
 
