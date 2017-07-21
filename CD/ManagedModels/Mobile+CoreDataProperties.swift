@@ -19,6 +19,6 @@ extension Mobile {
     @NSManaged public var name: String?
     @NSManaged public var price: String?
     @NSManaged public var sn: NSNumber?
-    @NSManaged public var manufacturer: Manufacturer?
+    @NSManaged public var user: User?
 
 }

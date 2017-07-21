@@ -51,8 +51,8 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maufacturer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-Lf-oba" userLabel="Manufacturer">
-                                                    <rect key="frame" x="185" y="19" width="94" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-Lf-oba" userLabel="Manufacturer">
+                                                    <rect key="frame" x="185" y="19" width="34" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -70,10 +70,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="manufacturer" destination="UVf-Lf-oba" id="rgD-A3-paa"/>
                                             <outlet property="name" destination="f6b-II-7jw" id="yAS-Ld-T7l"/>
                                             <outlet property="price" destination="SfS-Yh-wSl" id="AbK-Ee-WVL"/>
                                             <outlet property="sn" destination="Jfy-2R-fi9" id="E8j-gh-iUV"/>
+                                            <outlet property="user" destination="UVf-Lf-oba" id="xM8-wi-CMl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -136,14 +136,14 @@
                                         <rect key="frame" x="0.0" y="150" width="303" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wri-8k-eJC">
-                                                <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
-                                                <state key="normal" title="Manuacturer"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="266.5" height="30"/>
+                                                <state key="normal" title="User"/>
                                                 <connections>
                                                     <action selector="manufacturerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pLi-Rg-LQm"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2o-T6-3iC">
-                                                <rect key="frame" x="260" y="0.0" width="43" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2o-T6-3iC">
+                                                <rect key="frame" x="266.5" y="0.0" width="36.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -177,21 +177,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="g4V-9W-z6u"/>
                     <connections>
-                        <outlet property="manufacturerLabel" destination="O2o-T6-3iC" id="YoB-pR-tl3"/>
                         <outlet property="mobileTableView" destination="Azd-lt-lkn" id="nlL-1s-kHb"/>
                         <outlet property="nameTextfield" destination="OpS-Or-Bat" id="xKQ-UW-kx9"/>
                         <outlet property="priceTextfield" destination="BbM-GK-K1s" id="1Zd-g4-FLm"/>
                         <outlet property="snTextfield" destination="27l-Ph-a1i" id="m7D-b3-bJF"/>
+                        <outlet property="userLabel" destination="O2o-T6-3iC" id="m8g-pc-Ca0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1183.2" y="299.10044977511245"/>
         </scene>
-        <!--ManufacturerTVC-->
+        <!--UserTVC-->
         <scene sceneID="CWq-wG-k1e">
             <objects>
-                <tableViewController storyboardIdentifier="ManufacturerTVC" id="p6q-0F-qO2" customClass="ManufacturerTVC" customModule="CD" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="UserTVC" id="p6q-0F-qO2" customClass="UserTVC" customModule="CD" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="e3O-XG-ghZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

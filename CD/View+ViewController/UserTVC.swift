@@ -1,5 +1,5 @@
 //
-//  ManufacturerTVC.swift
+//  UserTVC.swift
 //  CD
 //
 //  Created by Sanjay Maharjan on 7/21/17.
@@ -7,15 +7,15 @@
 //
 
 import UIKit
-protocol ManufacturerTVCDelegate {
-  func selected(_ selected: Manufacturer)
+protocol UserTVCDelegate {
+  func selected(_ selected: User)
 }
 
-class ManufacturerTVC: UITableViewController {
-  var manufacturerList = [Manufacturer]()
+class UserTVC: UITableViewController {
+  var userList = [User]()
   var additionAlert: UIAlertController!
   
-  var manufacturerTVCDelegate: ManufacturerTVCDelegate?
+  var userTVCDelegate: UserTVCDelegate?
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,16 +24,16 @@ class ManufacturerTVC: UITableViewController {
   }
   
   func fetchData() {
-    manufacturerList = CoreDataHelper.sharedInstance.fetchManufacturerArray(withPredicate: nil)!
+    userList = CoreDataHelper.sharedInstance.fetchUserArray(withPredicate: nil)!
   }
   
   func addButtonItem() -> UIBarButtonItem {
-    return UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewManufacturer))
+    return UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewUser))
   }
   
-  func addNewManufacturer() {
+  func addNewUser() {
   
-    let alert = UIAlertController(title: "New entry", message: "Manufacturer Name.", preferredStyle: UIAlertControllerStyle.alert)
+    let alert = UIAlertController(title: "New entry", message: "User Name.", preferredStyle: UIAlertControllerStyle.alert)
     alert.addTextField { (textfield) in
       let text = textfield.text
       dump(text)
@@ -43,7 +43,7 @@ class ManufacturerTVC: UITableViewController {
       print("User click Ok button")
 //      print(self.textField.text)
       guard let text = alert.textFields?.first?.text else { return }
-      self.createManufacturer(withName: text)
+      self.createUser(withName: text)
     }))
   
     self.present(alert, animated: true, completion: {
@@ -51,9 +51,9 @@ class ManufacturerTVC: UITableViewController {
     })
   }
 
-  func createManufacturer(withName text: String ){
-    var manufacturer = Manufacturer.createManufacturerEntity()
-    manufacturer.createManufacturer(text)
+  func createUser(withName text: String ){
+    var manufacturer = User.createUserEntity()
+    manufacturer.createUser(text)
     CoreDataHelper.sharedInstance.saveMainContext()
     fetchData()
     tableView.reloadData()
@@ -63,20 +63,20 @@ class ManufacturerTVC: UITableViewController {
   // MARK: - Table view data source
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       // #warning Incomplete implementation, return the number of rows
-      return manufacturerList.count
+      return userList.count
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell", for: indexPath)
-    let currentManufacturer = manufacturerList[indexPath.row]
-    cell.textLabel?.text = currentManufacturer.name
+    let currentUser = userList[indexPath.row]
+    cell.textLabel?.text = currentUser.name
 
     return cell
   }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let selectedManufacturer = manufacturerList[indexPath.row]
-    manufacturerTVCDelegate?.selected(selectedManufacturer)
+    let selectedUser = userList[indexPath.row]
+    userTVCDelegate?.selected(selectedUser)
     self.navigationController?.popViewController(animated: true)
   }
   /*
@@ -95,7 +95,7 @@ class ManufacturerTVC: UITableViewController {
                  commit editingStyle: UITableViewCellEditingStyle,
                  forRowAt indexPath: IndexPath)
   {
-    let dataToDelete = self.manufacturerList[indexPath.row]
+    let dataToDelete = self.userList[indexPath.row]
     dataToDelete.delete()
     fetchData()
     tableView.reloadData()

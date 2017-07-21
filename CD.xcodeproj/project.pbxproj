@@ -12,16 +12,16 @@
 		F30C99FF1F21C15D00C9CED6 /* CD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F30C99ED1F21C15D00C9CED6 /* CD.xcdatamodeld */; };
 		F30C9A001F21C15D00C9CED6 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99EF1F21C15D00C9CED6 /* CoreDataHelper.swift */; };
 		F30C9A011F21C15D00C9CED6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F01F21C15D00C9CED6 /* CoreDataStack.swift */; };
-		F30C9A021F21C15D00C9CED6 /* Manufacturer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F21F21C15D00C9CED6 /* Manufacturer+CoreDataClass.swift */; };
-		F30C9A031F21C15D00C9CED6 /* Manufacturer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F31F21C15D00C9CED6 /* Manufacturer+CoreDataProperties.swift */; };
 		F30C9A041F21C15D00C9CED6 /* Mobile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F41F21C15D00C9CED6 /* Mobile+CoreDataClass.swift */; };
 		F30C9A051F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F51F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift */; };
 		F30C9A061F21C15D00C9CED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F71F21C15D00C9CED6 /* AppDelegate.swift */; };
 		F30C9A071F21C15D00C9CED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30C99F81F21C15D00C9CED6 /* Assets.xcassets */; };
 		F30C9A081F21C15D00C9CED6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F30C99F91F21C15D00C9CED6 /* Info.plist */; };
 		F30C9A091F21C15D00C9CED6 /* MobileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99FB1F21C15D00C9CED6 /* MobileCell.swift */; };
-		F30C9A0C1F21C54000C9CED6 /* ManufacturerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C9A0B1F21C54000C9CED6 /* ManufacturerTVC.swift */; };
+		F30C9A0C1F21C54000C9CED6 /* UserTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C9A0B1F21C54000C9CED6 /* UserTVC.swift */; };
 		F30C9A0E1F21D24600C9CED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C9A0D1F21D24600C9CED6 /* ViewController.swift */; };
+		F3FE1E531F2228280076E326 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE1E511F2228280076E326 /* User+CoreDataClass.swift */; };
+		F3FE1E541F2228280076E326 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE1E521F2228280076E326 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,17 +30,17 @@
 		F30C99EE1F21C15D00C9CED6 /* CD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CD.xcdatamodel; sourceTree = "<group>"; };
 		F30C99EF1F21C15D00C9CED6 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		F30C99F01F21C15D00C9CED6 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		F30C99F21F21C15D00C9CED6 /* Manufacturer+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F30C99F31F21C15D00C9CED6 /* Manufacturer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F30C99F41F21C15D00C9CED6 /* Mobile+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mobile+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F30C99F51F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mobile+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F30C99F71F21C15D00C9CED6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F30C99F81F21C15D00C9CED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F30C99F91F21C15D00C9CED6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F30C99FB1F21C15D00C9CED6 /* MobileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCell.swift; sourceTree = "<group>"; };
-		F30C9A0B1F21C54000C9CED6 /* ManufacturerTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManufacturerTVC.swift; sourceTree = "<group>"; };
+		F30C9A0B1F21C54000C9CED6 /* UserTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
 		F30C9A0D1F21D24600C9CED6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F31016F11D30FB2F00EF203D /* CD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FE1E511F2228280076E326 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F3FE1E521F2228280076E326 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 		F30C99F11F21C15D00C9CED6 /* ManagedModels */ = {
 			isa = PBXGroup;
 			children = (
-				F30C99F21F21C15D00C9CED6 /* Manufacturer+CoreDataClass.swift */,
-				F30C99F31F21C15D00C9CED6 /* Manufacturer+CoreDataProperties.swift */,
+				F3FE1E511F2228280076E326 /* User+CoreDataClass.swift */,
+				F3FE1E521F2228280076E326 /* User+CoreDataProperties.swift */,
 				F30C99F41F21C15D00C9CED6 /* Mobile+CoreDataClass.swift */,
 				F30C99F51F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift */,
 			);
@@ -103,7 +103,7 @@
 			children = (
 				F30C9A0D1F21D24600C9CED6 /* ViewController.swift */,
 				F30C99FB1F21C15D00C9CED6 /* MobileCell.swift */,
-				F30C9A0B1F21C54000C9CED6 /* ManufacturerTVC.swift */,
+				F30C9A0B1F21C54000C9CED6 /* UserTVC.swift */,
 			);
 			path = "View+ViewController";
 			sourceTree = "<group>";
@@ -201,15 +201,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30C9A061F21C15D00C9CED6 /* AppDelegate.swift in Sources */,
-				F30C9A021F21C15D00C9CED6 /* Manufacturer+CoreDataClass.swift in Sources */,
 				F30C9A051F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift in Sources */,
-				F30C9A0C1F21C54000C9CED6 /* ManufacturerTVC.swift in Sources */,
+				F30C9A0C1F21C54000C9CED6 /* UserTVC.swift in Sources */,
 				F30C9A0E1F21D24600C9CED6 /* ViewController.swift in Sources */,
+				F3FE1E531F2228280076E326 /* User+CoreDataClass.swift in Sources */,
 				F30C9A091F21C15D00C9CED6 /* MobileCell.swift in Sources */,
 				F30C9A011F21C15D00C9CED6 /* CoreDataStack.swift in Sources */,
+				F3FE1E541F2228280076E326 /* User+CoreDataProperties.swift in Sources */,
 				F30C9A001F21C15D00C9CED6 /* CoreDataHelper.swift in Sources */,
 				F30C99FF1F21C15D00C9CED6 /* CD.xcdatamodeld in Sources */,
-				F30C9A031F21C15D00C9CED6 /* Manufacturer+CoreDataProperties.swift in Sources */,
 				F30C9A041F21C15D00C9CED6 /* Mobile+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,12 +13,10 @@ class ViewController: UIViewController {
   @IBOutlet var snTextfield: UITextField!
   @IBOutlet var nameTextfield: UITextField!
   @IBOutlet var priceTextfield: UITextField!
-  @IBOutlet weak var manufacturerLabel: UILabel!
-    
+  @IBOutlet weak var userLabel: UILabel!
   @IBOutlet var mobileTableView: UITableView!
   
-  var manufactrurerList = [Manufacturer]()
-  var selectedManufacturer: Manufacturer?
+  var selectedUser: User?
     
   var mobile = [Mobile]()
   override func viewDidLoad() {
@@ -34,8 +32,8 @@ class ViewController: UIViewController {
   @IBAction func manufacturerButton(_ sender: UIButton) {
     //Select manufacturer
     let sb = UIStoryboard.init(name: "Main", bundle: nil)
-    let manuTVC = sb.instantiateViewController(withIdentifier: "ManufacturerTVC") as! ManufacturerTVC
-    manuTVC.manufacturerTVCDelegate = self
+    let manuTVC = sb.instantiateViewController(withIdentifier: "UserTVC") as! UserTVC
+    manuTVC.userTVCDelegate = self
     
     self.navigationController?.pushViewController(manuTVC, animated: true)
   }
@@ -45,7 +43,7 @@ class ViewController: UIViewController {
     let mobileSN = self.snTextfield.text,
     let mobileName = self.nameTextfield.text,
     let mobilePrice = self.priceTextfield.text,
-    let manufacturer = self.selectedManufacturer,
+    let user = self.selectedUser,
     !mobileSN.isEmpty,
     !mobileName.isEmpty,
     !mobilePrice.isEmpty
@@ -53,7 +51,7 @@ class ViewController: UIViewController {
     else { return }
     
     let mobile = Mobile.createMobileEntity()
-    mobile.createMobile(mobileSN, name: mobileName, price: mobilePrice, manufacturer: manufacturer)
+    mobile.createMobile(mobileSN, name: mobileName, price: mobilePrice, user: user)
     CoreDataHelper.sharedInstance.saveMainContext()
     fetchData()
     self.mobileTableView.reloadData()
@@ -62,7 +60,7 @@ class ViewController: UIViewController {
   
   func fetchData() {
     self.mobile = CoreDataHelper.sharedInstance.fetchMobileArray(withPredicate: nil)!
-    self.manufactrurerList = CoreDataHelper.sharedInstance.fetchManufacturerArray(withPredicate: nil)!
+//    self.userList = CoreDataHelper.sharedInstance.fetchUserArray(withPredicate: nil)!
   }
   
   override func didReceiveMemoryWarning() {
@@ -77,7 +75,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     let mobile = self.mobile[indexPath.row]
     cell.sn.text = String(describing: mobile.sn!)
     cell.name.text = String(describing: mobile.name)
-    cell.manufacturer.text = String(describing: mobile.manufacturer?.name)
+    cell.user.text = String(describing: mobile.user?.name)
     cell.price.text = self.mobile[indexPath.row].price
     return cell
   }
@@ -111,10 +109,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 }
 
-extension ViewController: ManufacturerTVCDelegate {
-  func selected(_ selected: Manufacturer) {
-    self.selectedManufacturer = selected
-    self.manufacturerLabel.text = selected.name
+extension ViewController: UserTVCDelegate {
+  func selected(_ selected: User) {
+    self.selectedUser = selected
+    self.userLabel.text = selected.name
   }
 }
 

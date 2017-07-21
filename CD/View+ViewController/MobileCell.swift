@@ -13,7 +13,7 @@ class MobileCell: UITableViewCell {
   @IBOutlet var sn: UILabel!
   @IBOutlet var name: UILabel!
   @IBOutlet var price: UILabel!
-    @IBOutlet weak var manufacturer: UILabel!
+  @IBOutlet weak var user: UILabel!
   
   override func awakeFromNib() {
     super.awakeFromNib()

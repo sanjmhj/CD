@@ -44,12 +44,12 @@ class CoreDataHelper: CoreDataStack {
   
   
   // Manufacturer actions
-  func fetchManufacturerArray(withPredicate predicate: NSPredicate?) -> [Manufacturer]? {
-    return fetchRequest("Manufacturer", withPredicate: predicate).fetchedObjects as? [Manufacturer]
+  func fetchUserArray(withPredicate predicate: NSPredicate?) -> [User]? {
+    return fetchRequest("User", withPredicate: predicate).fetchedObjects as? [User]
   }
   
-  func manufacturerEntity() -> NSEntityDescription? {
-    return entityDescription("Manufacturer")
+  func userEntity() -> NSEntityDescription? {
+    return entityDescription("User")
   }
   
 }
