@@ -39,6 +39,7 @@
 		F30C9A0B1F21C54000C9CED6 /* UserTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
 		F30C9A0D1F21D24600C9CED6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F31016F11D30FB2F00EF203D /* CD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C1328F1F25B6EB001B1B69 /* CD2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CD2.xcdatamodel; sourceTree = "<group>"; };
 		F3FE1E511F2228280076E326 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F3FE1E521F2228280076E326 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -374,9 +375,10 @@
 		F30C99ED1F21C15D00C9CED6 /* CD.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				F3C1328F1F25B6EB001B1B69 /* CD2.xcdatamodel */,
 				F30C99EE1F21C15D00C9CED6 /* CD.xcdatamodel */,
 			);
-			currentVersion = F30C99EE1F21C15D00C9CED6 /* CD.xcdatamodel */;
+			currentVersion = F3C1328F1F25B6EB001B1B69 /* CD2.xcdatamodel */;
 			path = CD.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
