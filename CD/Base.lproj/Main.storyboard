@@ -57,8 +57,16 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fe-fe-Saz" userLabel="Manufacturer">
+                                                    <rect key="frame" x="227" y="19" width="71" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="9Fe-fe-Saz" firstAttribute="leading" secondItem="UVf-Lf-oba" secondAttribute="trailing" constant="8" id="1ky-uf-zvs"/>
+                                                <constraint firstItem="9Fe-fe-Saz" firstAttribute="centerY" secondItem="UVf-Lf-oba" secondAttribute="centerY" id="4El-ni-Lsa"/>
                                                 <constraint firstItem="UVf-Lf-oba" firstAttribute="leading" secondItem="SfS-Yh-wSl" secondAttribute="trailing" constant="18" id="AuF-yG-0Eh"/>
                                                 <constraint firstItem="SfS-Yh-wSl" firstAttribute="leading" secondItem="f6b-II-7jw" secondAttribute="trailing" constant="33" id="BzU-qY-MJu"/>
                                                 <constraint firstItem="UVf-Lf-oba" firstAttribute="centerY" secondItem="CdP-z6-N09" secondAttribute="centerY" id="OU6-si-rcN"/>
@@ -70,6 +78,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="company" destination="9Fe-fe-Saz" id="jGb-za-Yl3"/>
                                             <outlet property="name" destination="f6b-II-7jw" id="yAS-Ld-T7l"/>
                                             <outlet property="price" destination="SfS-Yh-wSl" id="AbK-Ee-WVL"/>
                                             <outlet property="sn" destination="Jfy-2R-fi9" id="E8j-gh-iUV"/>

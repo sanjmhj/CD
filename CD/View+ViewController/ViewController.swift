@@ -51,11 +51,10 @@ class ViewController: UIViewController {
     else { return }
     
     let mobile = Mobile.createMobileEntity()
-    mobile.createMobile(mobileSN, name: mobileName, price: mobilePrice, user: user)
+    mobile.createMobile(mobileSN, name: mobileName, price: mobilePrice, user: user, company: "Self")
     CoreDataHelper.sharedInstance.saveMainContext()
     fetchData()
     self.mobileTableView.reloadData()
-//        print("saved")
   }
   
   func fetchData() {
@@ -76,7 +75,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     cell.sn.text = String(describing: mobile.sn!)
     cell.name.text = String(describing: mobile.name)
     cell.user.text = String(describing: mobile.user?.name)
-    cell.price.text = self.mobile[indexPath.row].price
+    cell.price.text = mobile.price
+    cell.company.text = mobile.company
     return cell
   }
   

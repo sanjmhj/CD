@@ -16,9 +16,10 @@ extension Mobile {
         return NSFetchRequest<Mobile>(entityName: "Mobile")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var price: String?
-    @NSManaged public var sn: NSNumber?
-    @NSManaged public var user: User?
+  @NSManaged public var name: String?
+  @NSManaged public var price: String?
+  @NSManaged public var sn: NSNumber?
+  @NSManaged public var user: User?
+  @NSManaged public var company: String?
 
 }
