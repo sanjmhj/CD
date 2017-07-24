@@ -52,4 +52,13 @@ class CoreDataHelper: CoreDataStack {
     return entityDescription("User")
   }
   
+  // Company actions
+  func fetchCompanyArray(withPredicate predicate: NSPredicate?) -> [Company]? {
+    return fetchRequest("Company", withPredicate: predicate).fetchedObjects as? [Company]
+  }
+  
+  func companyEntity() -> NSEntityDescription? {
+    return entityDescription("Company")
+  }
+  
 }
