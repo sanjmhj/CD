@@ -20,6 +20,7 @@ class UserTVC: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     fetchData()
+    title = "User List"
     self.navigationItem.setRightBarButton(addButtonItem(), animated: true)
   }
   
@@ -52,8 +53,8 @@ class UserTVC: UITableViewController {
   }
 
   func createUser(withName text: String ){
-    var manufacturer = User.createUserEntity()
-    manufacturer.createUser(text)
+    let user = User.createUserEntity()
+    user.createUser(text)
     CoreDataHelper.sharedInstance.saveMainContext()
     fetchData()
     tableView.reloadData()

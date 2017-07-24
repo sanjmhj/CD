@@ -9,29 +9,37 @@
 /* Begin PBXBuildFile section */
 		F30C99FD1F21C15D00C9CED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30C99E81F21C15D00C9CED6 /* LaunchScreen.storyboard */; };
 		F30C99FE1F21C15D00C9CED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30C99EA1F21C15D00C9CED6 /* Main.storyboard */; };
-		F30C99FF1F21C15D00C9CED6 /* CD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F30C99ED1F21C15D00C9CED6 /* CD.xcdatamodeld */; };
 		F30C9A001F21C15D00C9CED6 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99EF1F21C15D00C9CED6 /* CoreDataHelper.swift */; };
 		F30C9A011F21C15D00C9CED6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F01F21C15D00C9CED6 /* CoreDataStack.swift */; };
-		F30C9A041F21C15D00C9CED6 /* Mobile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F41F21C15D00C9CED6 /* Mobile+CoreDataClass.swift */; };
-		F30C9A051F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F51F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift */; };
 		F30C9A061F21C15D00C9CED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99F71F21C15D00C9CED6 /* AppDelegate.swift */; };
 		F30C9A071F21C15D00C9CED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30C99F81F21C15D00C9CED6 /* Assets.xcassets */; };
 		F30C9A081F21C15D00C9CED6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F30C99F91F21C15D00C9CED6 /* Info.plist */; };
 		F30C9A091F21C15D00C9CED6 /* MobileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C99FB1F21C15D00C9CED6 /* MobileCell.swift */; };
 		F30C9A0C1F21C54000C9CED6 /* UserTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C9A0B1F21C54000C9CED6 /* UserTVC.swift */; };
 		F30C9A0E1F21D24600C9CED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C9A0D1F21D24600C9CED6 /* ViewController.swift */; };
-		F3FE1E531F2228280076E326 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE1E511F2228280076E326 /* User+CoreDataClass.swift */; };
-		F3FE1E541F2228280076E326 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE1E521F2228280076E326 /* User+CoreDataProperties.swift */; };
+		F3C132A61F25B891001B1B69 /* Company+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C132A01F25B891001B1B69 /* Company+CoreDataClass.swift */; };
+		F3C132A71F25B891001B1B69 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C132A11F25B891001B1B69 /* Company+CoreDataProperties.swift */; };
+		F3C132A81F25B891001B1B69 /* Mobile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C132A21F25B891001B1B69 /* Mobile+CoreDataClass.swift */; };
+		F3C132A91F25B891001B1B69 /* Mobile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C132A31F25B891001B1B69 /* Mobile+CoreDataProperties.swift */; };
+		F3C132AA1F25B891001B1B69 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C132A41F25B891001B1B69 /* User+CoreDataClass.swift */; };
+		F3C132AB1F25B891001B1B69 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C132A51F25B891001B1B69 /* User+CoreDataProperties.swift */; };
+		F3C132AD1F25C5E4001B1B69 /* CompanyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C132AC1F25C5E4001B1B69 /* CompanyTVC.swift */; };
+		F3C132B21F25CA26001B1B69 /* Model1_to_Model2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3C132B11F25CA26001B1B69 /* Model1_to_Model2.xcmappingmodel */; };
+		F3C132C51F25D262001B1B69 /* MHWBookToBookPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C132B81F25D262001B1B69 /* MHWBookToBookPolicy.m */; };
+		F3C132C61F25D262001B1B69 /* MHWCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C132BA1F25D262001B1B69 /* MHWCoreDataController.m */; };
+		F3C132C71F25D262001B1B69 /* MHWMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C132BC1F25D262001B1B69 /* MHWMigrationManager.m */; };
+		F3C132C81F25D262001B1B69 /* MHWUserToUserPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C132BE1F25D262001B1B69 /* MHWUserToUserPolicy.m */; };
+		F3C132C91F25D262001B1B69 /* NSFileManager+MHWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C132C01F25D262001B1B69 /* NSFileManager+MHWAdditions.m */; };
+		F3C132CA1F25D262001B1B69 /* NSManagedObjectModel+MHWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C132C21F25D262001B1B69 /* NSManagedObjectModel+MHWAdditions.m */; };
+		F3C132CB1F25D262001B1B69 /* NSMigrationManager+Lookup.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C132C41F25D262001B1B69 /* NSMigrationManager+Lookup.m */; };
+		F3C132CF1F25DCBC001B1B69 /* CD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3C132CC1F25DCBC001B1B69 /* CD.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F30C99E91F21C15D00C9CED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F30C99EB1F21C15D00C9CED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F30C99EE1F21C15D00C9CED6 /* CD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CD.xcdatamodel; sourceTree = "<group>"; };
 		F30C99EF1F21C15D00C9CED6 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		F30C99F01F21C15D00C9CED6 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		F30C99F41F21C15D00C9CED6 /* Mobile+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mobile+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F30C99F51F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mobile+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F30C99F71F21C15D00C9CED6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F30C99F81F21C15D00C9CED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F30C99F91F21C15D00C9CED6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,9 +47,31 @@
 		F30C9A0B1F21C54000C9CED6 /* UserTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
 		F30C9A0D1F21D24600C9CED6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F31016F11D30FB2F00EF203D /* CD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3C1328F1F25B6EB001B1B69 /* CD2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CD2.xcdatamodel; sourceTree = "<group>"; };
-		F3FE1E511F2228280076E326 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F3FE1E521F2228280076E326 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F3C132A01F25B891001B1B69 /* Company+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F3C132A11F25B891001B1B69 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F3C132A21F25B891001B1B69 /* Mobile+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mobile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F3C132A31F25B891001B1B69 /* Mobile+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mobile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F3C132A41F25B891001B1B69 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F3C132A51F25B891001B1B69 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F3C132AC1F25C5E4001B1B69 /* CompanyTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTVC.swift; sourceTree = "<group>"; };
+		F3C132B11F25CA26001B1B69 /* Model1_to_Model2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model1_to_Model2.xcmappingmodel; sourceTree = "<group>"; };
+		F3C132B61F25D261001B1B69 /* CD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CD-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3C132B71F25D262001B1B69 /* MHWBookToBookPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHWBookToBookPolicy.h; sourceTree = "<group>"; };
+		F3C132B81F25D262001B1B69 /* MHWBookToBookPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHWBookToBookPolicy.m; sourceTree = "<group>"; };
+		F3C132B91F25D262001B1B69 /* MHWCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHWCoreDataController.h; sourceTree = "<group>"; };
+		F3C132BA1F25D262001B1B69 /* MHWCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHWCoreDataController.m; sourceTree = "<group>"; };
+		F3C132BB1F25D262001B1B69 /* MHWMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHWMigrationManager.h; sourceTree = "<group>"; };
+		F3C132BC1F25D262001B1B69 /* MHWMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHWMigrationManager.m; sourceTree = "<group>"; };
+		F3C132BD1F25D262001B1B69 /* MHWUserToUserPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHWUserToUserPolicy.h; sourceTree = "<group>"; };
+		F3C132BE1F25D262001B1B69 /* MHWUserToUserPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHWUserToUserPolicy.m; sourceTree = "<group>"; };
+		F3C132BF1F25D262001B1B69 /* NSFileManager+MHWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+MHWAdditions.h"; sourceTree = "<group>"; };
+		F3C132C01F25D262001B1B69 /* NSFileManager+MHWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+MHWAdditions.m"; sourceTree = "<group>"; };
+		F3C132C11F25D262001B1B69 /* NSManagedObjectModel+MHWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+MHWAdditions.h"; sourceTree = "<group>"; };
+		F3C132C21F25D262001B1B69 /* NSManagedObjectModel+MHWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+MHWAdditions.m"; sourceTree = "<group>"; };
+		F3C132C31F25D262001B1B69 /* NSMigrationManager+Lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMigrationManager+Lookup.h"; sourceTree = "<group>"; };
+		F3C132C41F25D262001B1B69 /* NSMigrationManager+Lookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMigrationManager+Lookup.m"; sourceTree = "<group>"; };
+		F3C132CD1F25DCBC001B1B69 /* CD1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CD1.xcdatamodel; sourceTree = "<group>"; };
+		F3C132CE1F25DCBC001B1B69 /* CD2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CD2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,7 @@
 		F30C99E71F21C15D00C9CED6 /* CD */ = {
 			isa = PBXGroup;
 			children = (
+				F3C132B31F25CAB6001B1B69 /* MigrationStuffs */,
 				F30C99E81F21C15D00C9CED6 /* LaunchScreen.storyboard */,
 				F30C99EA1F21C15D00C9CED6 /* Main.storyboard */,
 				F30C99EC1F21C15D00C9CED6 /* CoreDataHelper+Util */,
@@ -71,7 +102,8 @@
 		F30C99EC1F21C15D00C9CED6 /* CoreDataHelper+Util */ = {
 			isa = PBXGroup;
 			children = (
-				F30C99ED1F21C15D00C9CED6 /* CD.xcdatamodeld */,
+				F3C132CC1F25DCBC001B1B69 /* CD.xcdatamodeld */,
+				F3C132B01F25CA26001B1B69 /* MappingModel */,
 				F30C99EF1F21C15D00C9CED6 /* CoreDataHelper.swift */,
 				F30C99F01F21C15D00C9CED6 /* CoreDataStack.swift */,
 			);
@@ -81,10 +113,12 @@
 		F30C99F11F21C15D00C9CED6 /* ManagedModels */ = {
 			isa = PBXGroup;
 			children = (
-				F3FE1E511F2228280076E326 /* User+CoreDataClass.swift */,
-				F3FE1E521F2228280076E326 /* User+CoreDataProperties.swift */,
-				F30C99F41F21C15D00C9CED6 /* Mobile+CoreDataClass.swift */,
-				F30C99F51F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift */,
+				F3C132A01F25B891001B1B69 /* Company+CoreDataClass.swift */,
+				F3C132A11F25B891001B1B69 /* Company+CoreDataProperties.swift */,
+				F3C132A21F25B891001B1B69 /* Mobile+CoreDataClass.swift */,
+				F3C132A31F25B891001B1B69 /* Mobile+CoreDataProperties.swift */,
+				F3C132A41F25B891001B1B69 /* User+CoreDataClass.swift */,
+				F3C132A51F25B891001B1B69 /* User+CoreDataProperties.swift */,
 			);
 			path = ManagedModels;
 			sourceTree = "<group>";
@@ -105,6 +139,7 @@
 				F30C9A0D1F21D24600C9CED6 /* ViewController.swift */,
 				F30C99FB1F21C15D00C9CED6 /* MobileCell.swift */,
 				F30C9A0B1F21C54000C9CED6 /* UserTVC.swift */,
+				F3C132AC1F25C5E4001B1B69 /* CompanyTVC.swift */,
 			);
 			path = "View+ViewController";
 			sourceTree = "<group>";
@@ -125,6 +160,36 @@
 				F31016F11D30FB2F00EF203D /* CD.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F3C132B01F25CA26001B1B69 /* MappingModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3C132B11F25CA26001B1B69 /* Model1_to_Model2.xcmappingmodel */,
+			);
+			path = MappingModel;
+			sourceTree = "<group>";
+		};
+		F3C132B31F25CAB6001B1B69 /* MigrationStuffs */ = {
+			isa = PBXGroup;
+			children = (
+				F3C132B71F25D262001B1B69 /* MHWBookToBookPolicy.h */,
+				F3C132B81F25D262001B1B69 /* MHWBookToBookPolicy.m */,
+				F3C132B91F25D262001B1B69 /* MHWCoreDataController.h */,
+				F3C132BA1F25D262001B1B69 /* MHWCoreDataController.m */,
+				F3C132BB1F25D262001B1B69 /* MHWMigrationManager.h */,
+				F3C132BC1F25D262001B1B69 /* MHWMigrationManager.m */,
+				F3C132BD1F25D262001B1B69 /* MHWUserToUserPolicy.h */,
+				F3C132BE1F25D262001B1B69 /* MHWUserToUserPolicy.m */,
+				F3C132BF1F25D262001B1B69 /* NSFileManager+MHWAdditions.h */,
+				F3C132C01F25D262001B1B69 /* NSFileManager+MHWAdditions.m */,
+				F3C132C11F25D262001B1B69 /* NSManagedObjectModel+MHWAdditions.h */,
+				F3C132C21F25D262001B1B69 /* NSManagedObjectModel+MHWAdditions.m */,
+				F3C132C31F25D262001B1B69 /* NSMigrationManager+Lookup.h */,
+				F3C132C41F25D262001B1B69 /* NSMigrationManager+Lookup.m */,
+				F3C132B61F25D261001B1B69 /* CD-Bridging-Header.h */,
+			);
+			path = MigrationStuffs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,16 +267,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30C9A061F21C15D00C9CED6 /* AppDelegate.swift in Sources */,
-				F30C9A051F21C15D00C9CED6 /* Mobile+CoreDataProperties.swift in Sources */,
+				F3C132C91F25D262001B1B69 /* NSFileManager+MHWAdditions.m in Sources */,
+				F3C132AD1F25C5E4001B1B69 /* CompanyTVC.swift in Sources */,
+				F3C132A81F25B891001B1B69 /* Mobile+CoreDataClass.swift in Sources */,
+				F3C132AA1F25B891001B1B69 /* User+CoreDataClass.swift in Sources */,
+				F3C132C61F25D262001B1B69 /* MHWCoreDataController.m in Sources */,
+				F3C132CF1F25DCBC001B1B69 /* CD.xcdatamodeld in Sources */,
+				F3C132C71F25D262001B1B69 /* MHWMigrationManager.m in Sources */,
+				F3C132A61F25B891001B1B69 /* Company+CoreDataClass.swift in Sources */,
+				F3C132C51F25D262001B1B69 /* MHWBookToBookPolicy.m in Sources */,
 				F30C9A0C1F21C54000C9CED6 /* UserTVC.swift in Sources */,
+				F3C132C81F25D262001B1B69 /* MHWUserToUserPolicy.m in Sources */,
+				F3C132CA1F25D262001B1B69 /* NSManagedObjectModel+MHWAdditions.m in Sources */,
 				F30C9A0E1F21D24600C9CED6 /* ViewController.swift in Sources */,
-				F3FE1E531F2228280076E326 /* User+CoreDataClass.swift in Sources */,
 				F30C9A091F21C15D00C9CED6 /* MobileCell.swift in Sources */,
+				F3C132A71F25B891001B1B69 /* Company+CoreDataProperties.swift in Sources */,
 				F30C9A011F21C15D00C9CED6 /* CoreDataStack.swift in Sources */,
-				F3FE1E541F2228280076E326 /* User+CoreDataProperties.swift in Sources */,
 				F30C9A001F21C15D00C9CED6 /* CoreDataHelper.swift in Sources */,
-				F30C99FF1F21C15D00C9CED6 /* CD.xcdatamodeld in Sources */,
-				F30C9A041F21C15D00C9CED6 /* Mobile+CoreDataClass.swift in Sources */,
+				F3C132B21F25CA26001B1B69 /* Model1_to_Model2.xcmappingmodel in Sources */,
+				F3C132AB1F25B891001B1B69 /* User+CoreDataProperties.swift in Sources */,
+				F3C132A91F25B891001B1B69 /* Mobile+CoreDataProperties.swift in Sources */,
+				F3C132CB1F25D262001B1B69 /* NSMigrationManager+Lookup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,11 +400,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = N7DN9W93BF;
 				INFOPLIST_FILE = "$(SRCROOT)/CD/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snjmhj.CD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CD/MigrationStuffs/CD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,11 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = N7DN9W93BF;
 				INFOPLIST_FILE = "$(SRCROOT)/CD/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snjmhj.CD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CD/MigrationStuffs/CD-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,13 +453,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F30C99ED1F21C15D00C9CED6 /* CD.xcdatamodeld */ = {
+		F3C132CC1F25DCBC001B1B69 /* CD.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F3C1328F1F25B6EB001B1B69 /* CD2.xcdatamodel */,
-				F30C99EE1F21C15D00C9CED6 /* CD.xcdatamodel */,
+				F3C132CD1F25DCBC001B1B69 /* CD1.xcdatamodel */,
+				F3C132CE1F25DCBC001B1B69 /* CD2.xcdatamodel */,
 			);
-			currentVersion = F3C1328F1F25B6EB001B1B69 /* CD2.xcdatamodel */;
+			currentVersion = F3C132CE1F25DCBC001B1B69 /* CD2.xcdatamodel */;
 			path = CD.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

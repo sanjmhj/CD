@@ -15,9 +15,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+      // Override point for customization after application launch.
+      simulateOldData()
+      
+      if MHWCoreDataController.sharedInstance().isMigrationNeeded() {
+        do {
+          try MHWCoreDataController.sharedInstance().migrate()
+        } catch(_ ) {
+        }
+      }
+      return true
     }
+  
+  func simulateOldData() {
+    // Fake an old store so that we migrate on each launch
+    //    NSFileManager *fileManager = [NSFileManager defaultManager];
+    //    for (NSBundle *bundle in [NSBundle allBundles]) {
+    //        NSURL *oldStoreURL = [bundle URLForResource:@"Model1" withExtension:@"sqlite"];
+    //        NSLog(@"old: %@", oldStoreURL);
+    //        if (oldStoreURL) {
+    //            [fileManager removeItemAtURL:[MHWCoreDataController sharedInstance].sourceStoreURL error:nil];
+    //            [fileManager copyItemAtURL:oldStoreURL
+    //                                 toURL:[MHWCoreDataController sharedInstance].sourceStoreURL
+    //                                 error:nil];
+    //            break;
+    //        }
+    //    }
+    
+    var fileManager = FileManager.default
+    for bundle in Bundle.allBundles {
+      let oldStoreURL = bundle.url(forResource: "CD1", withExtension: "sqlite")
+      if (oldStoreURL != nil) {
+        let destUrl = MHWCoreDataController.sharedInstance().sourceStoreURL()
+        do {
+          try fileManager.copyItem(at: oldStoreURL!, to: destUrl!)
+        } catch(_ ) { }
+      }
+    }
+  }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

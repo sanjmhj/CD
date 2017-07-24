@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  CD
 //
-//  Created by Sanjay Maharjan on 7/21/17.
+//  Created by Sanjay Maharjan on 7/24/17.
 //  Copyright © 2017 Sanjay Maharjan. All rights reserved.
 //
 

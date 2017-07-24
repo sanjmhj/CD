@@ -14,9 +14,11 @@ class ViewController: UIViewController {
   @IBOutlet var nameTextfield: UITextField!
   @IBOutlet var priceTextfield: UITextField!
   @IBOutlet weak var userLabel: UILabel!
+  @IBOutlet weak var companyLabel: UILabel!
   @IBOutlet var mobileTableView: UITableView!
   
   var selectedUser: User?
+  var selectedCompany: Company?
     
   var mobile = [Mobile]()
   override func viewDidLoad() {
@@ -38,12 +40,22 @@ class ViewController: UIViewController {
     self.navigationController?.pushViewController(manuTVC, animated: true)
   }
   
+  @IBAction func companyButton(_ sender: UIButton) {
+    //Select company
+    let sb = UIStoryboard.init(name: "Main", bundle: nil)
+    let companyTVC = sb.instantiateViewController(withIdentifier: "CompanyTVC") as! CompanyTVC
+    companyTVC.companyTVCDelegate = self
+    
+    self.navigationController?.pushViewController(companyTVC, animated: true)
+  }
+  
   @IBAction func submitButton(_ sender: UIButton) {
     guard
     let mobileSN = self.snTextfield.text,
     let mobileName = self.nameTextfield.text,
     let mobilePrice = self.priceTextfield.text,
     let user = self.selectedUser,
+    let company = self.selectedCompany,
     !mobileSN.isEmpty,
     !mobileName.isEmpty,
     !mobilePrice.isEmpty
@@ -51,7 +63,7 @@ class ViewController: UIViewController {
     else { return }
     
     let mobile = Mobile.createMobileEntity()
-    mobile.createMobile(mobileSN, name: mobileName, price: mobilePrice, user: user, company: "Self")
+    mobile.createMobile(mobileSN, name: mobileName, price: mobilePrice, user: user, company: company)
     CoreDataHelper.sharedInstance.saveMainContext()
     fetchData()
     self.mobileTableView.reloadData()
@@ -76,7 +88,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     cell.name.text = String(describing: mobile.name)
     cell.user.text = String(describing: mobile.user?.name)
     cell.price.text = mobile.price
-    cell.company.text = mobile.company
+    cell.company.text = mobile.companys?.name
     return cell
   }
   
@@ -97,16 +109,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                           forRowAt indexPath: IndexPath)
   {
     let dataToDelete = self.mobile[indexPath.row]
-    deleteData(dataToDelete)
+    dataToDelete.delete()
     fetchData()
     tableView.reloadData()
   }
-  
-  func deleteData(_ dataToDelete: CRUDable) {
-    dataToDelete.delete()
-      //CoreDataHelper.sharedInstance.managedObjectContext.delete(dataToDelete)
-  }
-
 }
 
 extension ViewController: UserTVCDelegate {
@@ -115,4 +121,13 @@ extension ViewController: UserTVCDelegate {
     self.userLabel.text = selected.name
   }
 }
+
+extension ViewController: CompanyTVCDelegate {
+  func selectedCompany(_ selected: Company) {
+    self.selectedCompany = selected
+    self.companyLabel.text = selected.name
+  }
+}
+
+
 
